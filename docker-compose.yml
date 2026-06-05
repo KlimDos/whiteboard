@@ -1,0 +1,13 @@
+services:
+  whiteboard:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - whiteboard-data:/data
+    environment:
+      PORT: "8080"
+      DB_PATH: /data/whiteboard.db
+
+volumes:
+  whiteboard-data:

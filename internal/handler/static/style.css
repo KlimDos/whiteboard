@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.landing {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 12px;
+  padding: 2rem;
+  width: min(420px, 92vw);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card h1 {
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  margin: 0 0 1.5rem;
+  color: #52525b;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.join-form {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e4e4e7;
+}
+
+input[type="text"] {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.65rem 1rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.primary {
+  background: #18181b;
+  color: #fff;
+  border-color: #18181b;
+}
+
+.board-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.session-id {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+  color: #52525b;
+}
+
+#canvas {
+  flex: 1;
+  width: 100%;
+  touch-action: none;
+  background: #fff;
+  cursor: crosshair;
+}

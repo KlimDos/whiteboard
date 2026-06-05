@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whiteboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="landing">
+  <main class="card">
+    <h1>Whiteboard</h1>
+    <p>Create a new board or join an existing one.</p>
+    <form action="/create" method="post" class="stack">
+      <button type="submit" class="btn primary">Create</button>
+    </form>
+    <form action="/join" method="post" class="stack join-form">
+      <input type="text" name="id" maxlength="8" placeholder="Session ID" required pattern="[A-Za-z0-9]{8}">
+      <button type="submit" class="btn">Join</button>
+    </form>
+  </main>
+</body>
+</html>
