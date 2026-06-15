@@ -1,13 +1,14 @@
 services:
   whiteboard:
     build: .
+    container_name: whiteboard
+    privileged: true
+    restart: always
     ports:
-      - "8080:8080"
+      - "80:80"
     volumes:
-      - whiteboard-data:/data
+      - ./:/app
     environment:
-      PORT: "8080"
-      DB_PATH: /data/whiteboard.db
-
-volumes:
-  whiteboard-data:
+      PORT: "80"
+      DB_PATH: /tmp/whiteboard.db
+      DEBUG: "1"
